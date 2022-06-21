@@ -1,0 +1,15 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Pokemon {
+  id: Int!
+  name: String!
+  image: String
+}
+
+type Query {
+  maxPages: Int!
+  pokemonId(id: Int!): Pokemon!
+  pokemonsPage(page: Int!): [Pokemon!]!
+}
