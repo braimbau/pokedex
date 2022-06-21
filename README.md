@@ -8,6 +8,8 @@ Lancement back:
 
 `cd api && npm start`
 
+pokedex disponible sur [http://localhost:3002](http://localhost:3002)
+
 Ameliorations possibles de l'environnement de Dev:
 - mise en place d'un environement de dev et de prod distincts
 - mise en place de branches et de PR sur le github
