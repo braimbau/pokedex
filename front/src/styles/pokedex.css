@@ -1,0 +1,160 @@
+.Frame {
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pokedex {
+    border-radius: 4px;
+    background-color: rgb(196, 0, 0);
+    padding: 24px;
+}
+
+.Title {
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+}
+
+.Grid {
+    width: 450px;
+    height: 500px;
+    background-color: grey;
+    border-radius: 4px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+    padding: 4px;
+    overflow: auto;
+}
+
+.Pokemon {
+    overflow: hidden;
+    margin: 4px;
+    background-color: lightgrey;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.PokemonIdentity {
+    font-weight: bold;
+    margin: 8px;
+}
+
+.PokemonName {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.PokemonName:hover {
+    padding: 4px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    font-size: large;
+    position: fixed;
+    white-space:normal;
+    overflow:visible; 
+    background-color:#FFF;
+}
+
+.PokemonImage {
+    height: 96px;
+    width: 96px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.Controls {
+    display: flex;
+    flex-direction: row;
+}
+
+.Display {
+    background-color: green;
+    height: 50px;
+    width: 50%;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.DisplayText {
+    color: black;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.Controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.Prev {
+    margin-right: 5px;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    background: black;
+    cursor: pointer;
+}
+.Prev:before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.Next {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    background: black;
+    cursor: pointer;
+}
+.Next:before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    right: -15px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.Info {
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+}
