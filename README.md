@@ -1,12 +1,12 @@
 # pokedex
 
-Lancement front:
-
-`cd frontend && npm start`
-
 Lancement back:
 
-`cd api && npm start`
+`cd api && npm install && npm start`
+
+Lancement front:
+
+`cd front && npm install && npm start`
 
 pokedex disponible sur [http://localhost:3002](http://localhost:3002)
 
